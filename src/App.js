@@ -4,7 +4,7 @@ import Axios from "axios";
 import CityComponent from "./modules/CityComponent";
 import WeatherComponent from "./modules/WeatherInfoComponent";
 
-const API_KEY='fe4feefa8543e06d4f3c66d92c61b69c'
+const API_KEY='b93276ab1f9da29c04834cd72b09ef5b'
 
 export const WeatherIcons = {
   "01d": "/demo-playwright-component-testing/icons/sunny.svg",
