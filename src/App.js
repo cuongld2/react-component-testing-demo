@@ -4,6 +4,8 @@ import Axios from "axios";
 import CityComponent from "./modules/CityComponent";
 import WeatherComponent from "./modules/WeatherInfoComponent";
 
+const API_KEY='fe4feefa8543e06d4f3c66d92c61b69c'
+
 export const WeatherIcons = {
   "01d": "/demo-playwright-component-testing/icons/sunny.svg",
   "01n": "/demo-playwright-component-testing/icons/night.svg",
@@ -54,7 +56,7 @@ function App() {
   const fetchWeather = async (e) => {
     e.preventDefault();
     const response = await Axios.get(
-      `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=fe4feefa8543e06d4f3c66d92c61b69c`,
+      `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}`,
     );
     updateWeather(response.data);
   };
